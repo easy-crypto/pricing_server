@@ -37,6 +37,7 @@ use figment::{
 #[derive(Debug, Deserialize, Serialize)]
 struct Config {
     port: u16,
+    address: String,
     /* and so on.. */
 }
 
@@ -45,13 +46,17 @@ impl Default for Config {
         dotenv().ok();
 
         let port = env::var("PORT").ok();
+        let address = env::var("ADDRESS").ok();
         let port: u16 = port
             .expect("PORT not set")
             .parse()
             .expect("PORT should be number");
 
+        let address: String = address.expect("ADDRESS not set");
+
         Config {
             port: u16::from(port),
+            address,
         }
     }
 }
