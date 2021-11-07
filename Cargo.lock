@@ -788,7 +788,9 @@ name = "pricing_server"
 version = "0.1.0"
 dependencies = [
  "dotenv",
+ "figment",
  "rocket",
+ "serde",
 ]
 
 [[package]]
