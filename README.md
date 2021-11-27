@@ -11,7 +11,7 @@ DB_USERNAME=<DB username> \
 DB_PASSWORD=<DB password> \
 DB_HOSTNAME=<DB hostname> \
 DB_NAME=<DB name> \
-RUST_LOG_STYLE=auto RUST_LOG=pricing_daemon=info,warn,error cargo run
+RUST_LOG_STYLE=auto RUST_LOG=pricing_server=info,warn,error cargo run
 ```
 
 # Endpoints
