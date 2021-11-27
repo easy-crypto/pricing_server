@@ -5,12 +5,12 @@ Price server that serve _BTCUSD_ pricing data.
 # Usage
 
 ```
-PORT=<Server port to bind>
-ADDRESS=<Server address>
-DB_USERNAME=<DB username>
-DB_PASSWORD=<DB password>
-DB_HOSTNAME=<DB hostname>
-DB_NAME=<DB name>
+PORT=<Server port to bind> \
+ADDRESS=<Server address> \
+DB_USERNAME=<DB username> \
+DB_PASSWORD=<DB password> \
+DB_HOSTNAME=<DB hostname> \
+DB_NAME=<DB name> \
 RUST_LOG_STYLE=auto RUST_LOG=pricing_daemon=info,warn,error cargo run
 ```
 
